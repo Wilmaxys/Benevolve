@@ -1,0 +1,115 @@
+@import '../../scss/variables.scss';
+
+.title {
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.bottom_content {
+  --auto-grid-min-size: 16rem;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.grid_wrapper {
+  --auto-grid-min-size: 16rem;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0;
+  padding: 0 10px;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.grid_wrapper .grid_element {
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid rgba(150, 150, 150, 0.2);
+}
+
+.grid_header {
+  background: rgba(85, 85, 85, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  padding: 5px 5px 10px 5px;
+}
+
+.grid_header_image {
+  border-radius: 3px;
+  object-fit: cover;
+  width: 100%;
+  height: 100px;
+}
+
+.grid_content {
+  padding: 0 10px;
+  background: rgba(85, 85, 85, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.grid_footer {
+  padding: 10px 15px;
+  background: rgba(125, 125, 125, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-top: 1px solid rgba(150, 150, 150, 0.2);
+  display: flex;
+  flex-direction: row;
+}
+
+.grid_footer_ip {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.grid_footer_link {
+  text-decoration: none;
+  background-color: $back_darker;
+  color: $font_light;
+  border-radius: 3px;
+  padding: 2px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.description {
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.description_icon {
+  background-color: $back_dark;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.description_container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.description_header {
+  font-weight: 600;
+  text-transform: Uppercase;
+  font-size: 10px;
+}
+
+.description_content {
+  font-weight: 700;
+  font-size: 14px;
+}

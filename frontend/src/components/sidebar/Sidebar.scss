@@ -1,0 +1,66 @@
+@import '../../scss/variables';
+
+$border_size: 5px;
+
+.sidebar_max {
+  min-width: 240px !important;
+}
+
+.sidebar {
+  word-break: keep-all;
+  z-index: 1;
+  width: 70px;
+  min-width: 70px;
+  flex-shrink: 0;
+  overflow: hidden;
+  transition: min-width 0.5s;
+  // transition: width 0.5s ease-in-out;
+  .top_part {
+    height: 50px;
+    display: flex;
+    .sidebar_drawer_icon {
+      margin-right: $border_size;
+      // transition: transform 1s;
+      cursor: pointer;
+      border-left: $border_size solid transparent;
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      svg {
+        min-width: 25px;
+        min-height: 25px;
+      }
+    }
+    .sidebar_drawer_icon:hover {
+      border-left: $border_size solid $font;
+    }
+  }
+  .middle_part {
+    ul {
+      list-style: none;
+      padding: 0;
+      li {
+        border-left: 5px solid transparent;
+        div {
+          display: flex;
+          padding: 10px 0px 10px 18px;
+          font-weight: 400;
+          // transition: transform 1s;
+          cursor: pointer;
+
+          svg {
+            margin-right: 25px;
+            min-width: 25px;
+            min-height: 25px;
+          }
+        }
+      }
+      li:hover {
+        border-left: 5px solid $font;
+      }
+    }
+  }
+  .bottom_part {
+  }
+}

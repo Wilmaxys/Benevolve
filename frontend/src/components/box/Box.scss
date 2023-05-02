@@ -1,0 +1,10 @@
+@import '../../scss/mixins';
+
+.box {
+  @include shadow;
+
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}

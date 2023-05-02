@@ -1,0 +1,15 @@
+@import '../../../scss/variables';
+
+.login_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login_box {
+  width: 25%;
+  background-color: $back;
+  padding: 20px;
+  border-radius: 10px;
+}
